@@ -7,13 +7,13 @@ Steps to recreate:
 
 1. Create firebase project online & turn on Authentication (email and password), Firestore Database, Functions. 
 
-Create a directory to clone my code into.
+    Create a directory to clone my code into.
 
-    mkdir socialapp
-    cd socialapp
-    firebase init
+        mkdir socialapp
+        cd socialapp
+        firebase init
 
-Go into Firebase console, click Project settings, connect to web app, and copty/paste your config credentials into my /functions/util/config.js file
+    Go into Firebase console, click Project settings, connect to web app, and copty/paste your config credentials into my /functions/util/config.js file
 
 2. choose these options as you are prompted:
 
@@ -31,10 +31,11 @@ Go into Firebase console, click Project settings, connect to web app, and copty/
 
 3. deploy
 
-    firebase deploy
+        firebase deploy
 
 4. install dependences while in functions directory:
-    npm install --save express
-    npm install --save firebase
-    npm install
+
+        npm install --save express
+        npm install --save firebase
+        npm install 
 
