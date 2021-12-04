@@ -14,8 +14,6 @@
 </body>
 <script>
     function handleFormSubmit(event) {
-        const form = document.querySelector('.signup-form');
-        form.addEventListener('submit', handleFormSubmit);
         var http = require('follow-redirects').http;
         var fs = require('fs');
 
@@ -52,9 +50,10 @@
         const formJSON = Object.fromEntries(data.entries());
 
         const results = JSON.stringify(formJSON, null, 2);
-        req.write(postData);
+        req.write(results);
     };
 
-    
+    const form = document.querySelector('.signup-form');
+    form.addEventListener('submit', handleFormSubmit);
 
 </script>
