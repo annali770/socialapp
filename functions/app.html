@@ -50,8 +50,8 @@
         const data = new FormData(event.target);
 
         const formJSON = Object.fromEntries(data.entries());
-
-        const results = JSON.stringify(formJSON, null, 2);
+        console.log(formJSON);
+        const results = JSON.stringify(formJSON);
         req.write(results);
     };
 
