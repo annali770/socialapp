@@ -9,13 +9,14 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "12"
+    "node": "14"
   },
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "firebase": "^8.9.0",
-    "firebase-admin": "^8.9.0",
+    "firebase": "^7.9.0",
+    "firebase-admin": "^7.0.0",
     "firebase-functions": "^3.14.1"
   },
   "devDependencies": {
