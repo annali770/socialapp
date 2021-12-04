@@ -13,7 +13,7 @@ Steps to recreate:
         cd socialapp
         firebase init
 
-    Go into Firebase console, click Project settings, connect to web app, and copty/paste your config credentials into my /functions/util/config.js file
+    Go into Firebase console, click Project settings, connect to web app, and copy/paste your config credentials into my /functions/util/config.js file
 
 2. choose these options as you are prompted:
 
@@ -33,9 +33,6 @@ Steps to recreate:
 
         firebase deploy
 
-4. install dependences while in functions directory:
+4. install dependencies:
 
-        npm install --save express
-        npm install --save firebase
-        npm install 
-
+        npm install
