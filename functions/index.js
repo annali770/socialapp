@@ -1,7 +1,6 @@
 const functions = require("firebase-functions");
 const app = require('express')();
 const FBAuth = require('./util/FBAuth');
-const router = express.Router();
 
 const { db } = require('./util/admin');
 
@@ -30,3 +29,6 @@ app.post('/login', login);
 app.get('/user', FBAuth, getAuthenticatedUser);
 
 exports.api = functions.region('us-central1').https.onRequest(app);
+
+
+console.log(getAllPosts());
